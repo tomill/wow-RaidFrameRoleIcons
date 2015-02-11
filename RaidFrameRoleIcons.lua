@@ -1,3 +1,5 @@
+LoadAddOn("Blizzard_CompactRaidFrames")
+
 local spec2role = {}
 local name2role = {}
 
@@ -15,6 +17,7 @@ end
 -- update name2role table
 local frame = CreateFrame("Frame")
 frame:RegisterEvent("GROUP_ROSTER_UPDATE")
+frame:RegisterEvent("UPDATE_BATTLEFIELD_STATUS")
 frame:RegisterEvent("PLAYER_ENTERING_BATTLEGROUND")
 frame:SetScript("OnEvent", function(self, event)
     local memberCount = GetNumBattlefieldScores()
