@@ -19,6 +19,7 @@ local frame = CreateFrame("Frame")
 frame:RegisterEvent("GROUP_ROSTER_UPDATE")
 frame:RegisterEvent("UPDATE_BATTLEFIELD_STATUS")
 frame:RegisterEvent("PLAYER_ENTERING_BATTLEGROUND")
+
 frame:SetScript("OnEvent", function(self, event)
     local memberCount = GetNumBattlefieldScores()
     for i = 1, memberCount do

@@ -1,8 +1,7 @@
 ## Interface: 60000
 ## Title: Raid Frame Role Icons
 ## Notes: Show spec role icon on the Blizz raid frame in battlegrounds
-## Version: 1.0
+## Version: 1.0.0
 ## Author: Tomill
-## DefaultState: Enabled
 
 RaidFrameRoleIcons.lua
